@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="40dp"
     android:background="@color/blue_top"
@@ -15,19 +15,20 @@
 
         <ImageView
             android:id="@+id/back_image"
-            android:layout_width="10dp"
-            android:layout_height="20dp"
-            android:scaleType="fitXY"
-            android:src="@mipmap/fanhui"/>
-        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/arrow_right_normal"
+            android:alpha="70"/>
+        <ImageView
             android:id="@+id/chan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="蟬"
-            android:textColor="@color/white"
-            android:textSize="23sp"
-            android:layout_marginLeft="@dimen/top_10dp"
-            />
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@mipmap/log_a" />
+
 
 
     </LinearLayout>
@@ -37,10 +38,12 @@
         android:id="@+id/brief_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="日本攻略"
         android:textColor="@color/white"
         android:textSize="@dimen/text_20sp"
         android:layout_marginLeft="@dimen/top_10dp"/>
+
+
+
 
 
 </LinearLayout>

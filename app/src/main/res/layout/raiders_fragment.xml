@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="@dimen/top_10dp">
+            android:padding="@dimen/top_10dp"
+            android:layout_marginTop="@dimen/top_10dp">
 
 
             <TextView
@@ -28,7 +29,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1px"
                 android:layout_marginTop="@dimen/top_5dp"
                 android:background="@color/hui" />
 
@@ -55,7 +56,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1px"
                 android:layout_marginTop="@dimen/top_5dp"
                 android:background="@color/hui" />
 
@@ -83,7 +84,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1px"
                 android:layout_marginTop="@dimen/top_5dp"
                 android:background="@color/hui" />
 
@@ -110,7 +111,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1px"
                 android:layout_marginTop="@dimen/top_5dp"
                 android:background="@color/hui" />
 
@@ -137,7 +138,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1px"
                 android:layout_marginTop="@dimen/top_5dp"
                 android:background="@color/hui" />
 
@@ -164,7 +165,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1px"
                 android:layout_marginTop="@dimen/top_5dp"
                 android:background="@color/hui" />
 

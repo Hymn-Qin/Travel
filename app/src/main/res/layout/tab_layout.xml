@@ -7,6 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="aihao"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_15sp"
         android:gravity="center"/>
 
 </LinearLayout>

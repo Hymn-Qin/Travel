@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/parent_layout">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/CircleImageView"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/weizhi" />
+<TextView
+    android:id="@+id/entry_name"
+    android:text="基辅"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/CircleImageView"/>
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CircleImageView"
+        android:text="Lena说：司机已经到机场了。\r\nLena说：司机已经在等候了。\r\nLena说：司机在一楼等你们。\r\nLena说：支付一些等候费用？\r\nLena说：20 UAH/时"/>
+    <xiaominghoaba.com.www.chanyouji.Utils.childListView
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/comment">
+</xiaominghoaba.com.www.chanyouji.Utils.childListView>
+</RelativeLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Chanyouji</string>
+    <string name="app_name">蝉游记</string>
 
 
     <array name="title">
@@ -8,4 +8,5 @@
         <item>工具箱</item>
     </array>
 
+    <string name="xia">选择下一次旅行的期许之地</string>
 </resources>

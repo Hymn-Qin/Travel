@@ -6,10 +6,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TabWidget;
 
 import com.lanou.project.chanyouji.Fragment.RaidersFragment;
 
+import com.lanou.project.chanyouji.Fragment.ToolFragment;
+import com.lanou.project.chanyouji.Fragment.TravelNotesFragment;
 import com.lanou.project.chanyouji.base.LinePagerAdapter;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(this));
           initView();
           initData();
     }
@@ -44,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentList =new ArrayList<>();
 
+        fragmentList.add(new TravelNotesFragment());
         fragmentList.add(new RaidersFragment());
-        fragmentList.add(new RaidersFragment());
-        fragmentList.add(new RaidersFragment());
+        fragmentList.add(new ToolFragment());
 
         titleList=new ArrayList<>();
 
@@ -57,10 +63,13 @@ public class MainActivity extends AppCompatActivity {
 
         adapter=new LinePagerAdapter(this,getSupportFragmentManager(),titleList,fragmentList);
 
-        tabLayout.setTabTextColors(Color.BLACK,Color.BLACK);
-        tabLayout.setSelectedTabIndicatorColor(Color.BLUE);
+
+
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        tabLayout.setSelectedTabIndicatorHeight(6);
+
+
 
         for (int i=0;i<titleList.size();i++){
             TabLayout.Tab tab=tabLayout.getTabAt(i);

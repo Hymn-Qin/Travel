@@ -1,6 +1,7 @@
 package com.lanou.project.chanyouji.RaidersActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Handler;
 import android.os.Message;
@@ -135,7 +136,7 @@ public class CityTravelListItemActivity extends AppCompatActivity {
                 if (msg.what == 200){
 
 
-                    dialog.dismiss();
+
                     titleText.setText(cityTravelItem.getName_zh_cn());
                     titleABCText.setText(cityTravelItem.getName_en());
                     photoNum.setText("图片 " + cityTravelItem.getPhotos_count());
@@ -150,7 +151,7 @@ public class CityTravelListItemActivity extends AppCompatActivity {
                             .into(titleImage);
                     Picasso.with(getApplicationContext())
                             .load(cityTravelItem.getImage_url())
-                            .resize(290,150)//加载图片大小
+                            .resize(100,50)//加载图片大小
                             .memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
                             .into(bgImage);
                     bgImage.setVisibility(View.GONE);
@@ -215,11 +216,12 @@ public class CityTravelListItemActivity extends AppCompatActivity {
                         hotel_nearby_LL.addView(view);
                     }
                     try {
-                        Thread.sleep(1000);
+                        Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
 
+                    dialog.dismiss();
 
                     exListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
                         @Override

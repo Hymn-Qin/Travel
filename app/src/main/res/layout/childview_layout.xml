@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp">
+    <include layout="@layout/parent_item_group"/>
+<ImageView
+    android:id="@+id/url"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="centerInside"
+    android:src="@mipmap/ic_launcher"/>
+<TextView
+    android:id="@+id/description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="123jkdl11111111111"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/weizhi"/>
+    <TextView
+        android:text="基辅"
+        android:gravity="center_vertical"
+        android:layout_width="30dp"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:layout_height="match_parent"
+        android:id="@+id/entry_name"
+        android:layout_marginLeft="5dp"/>
+    <ImageButton
+        android:layout_marginLeft="220dp"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+</LinearLayout>

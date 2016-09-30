@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+ >
+
+<RelativeLayout
+    android:id="@+id/rela_f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/image_f"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:src="@mipmap/ic_launcher"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="150dp"/>
+    <TextView
+        android:id="@+id/text_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xia"
+        android:layout_gravity="center"
+        android:layout_marginTop="42dp"
+        android:textColor="#bfbfbf"
+        android:layout_below="@+id/image_f"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/tool_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contextClickable="true"
+        android:background="@drawable/shape"
+        android:text="开启工具箱"
+        android:textColor="#f4fbfe"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="onB"
+        android:layout_below="@+id/text_f"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+    <include layout="@layout/tool_layout"
+       android:id="@+id/sssss"
+       android:visibility="gone"
+        />
+</RelativeLayout>

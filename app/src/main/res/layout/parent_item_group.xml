@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CircleImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/fangzi1" />
+
+    <TextView
+        android:id="@+id/entry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/CircleImageView"
+        android:text="基辅" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entry_name"
+        android:layout_toRightOf="@id/CircleImageView"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CircleImageView"
+        android:padding="10dp"
+        android:text="Lena说：司机已经到机场了。\r\nLena说：司机已经在等候了。\r\nLena说：司机在一楼等你们。\r\nLena说：支付一些等候费用？\r\nLena说：20 UAH/时" />
+</RelativeLayout>
