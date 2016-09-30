@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:background="#e6e6e6">
+
+
+
+    <ImageView
+        android:id="@+id/brief_image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@mipmap/ic_launcher"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/jianbain"
+        />
+
+    <TextView
+        android:id="@+id/brief_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日本概览"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_20sp"
+        android:layout_marginLeft="@dimen/top_10dp"
+        android:layout_marginTop="@dimen/top_10dp"/>
+    <TextView
+        android:id="@+id/address_ABC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Japan"
+        android:textSize="@dimen/text_15sp"
+        android:layout_toRightOf="@+id/brief_address"
+        android:layout_alignBottom="@+id/brief_address"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/top_10dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/brief_image"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/brief_item_01"
+            android:id="@+id/button1"/>
+        <include layout="@layout/brief_item_02"
+            android:id="@+id/button2"/>
+        <include layout="@layout/brief_item_03"
+            android:id="@+id/button3"/>
+        <include layout="@layout/brief_item_04"
+            android:id="@+id/button4"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

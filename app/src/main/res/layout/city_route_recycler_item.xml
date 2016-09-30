@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/top_3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <ImageView
+            android:id="@+id/route_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/jianbian01"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/route_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行程名字"
+            android:textSize="@dimen/text_20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="@dimen/top_10dp"
+           />
+
+        <ImageView
+            android:id="@+id/idimage"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/time_roture"
+            android:layout_below="@+id/route_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/top_5dp"/>
+        <TextView
+            android:id="@+id/route_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/route_name"
+            android:layout_toRightOf="@+id/idimage" />
+
+        <ImageView
+            android:id="@+id/idimage02"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/num_roture"
+            android:layout_below="@+id/route_name"
+            android:layout_marginLeft="@dimen/top_10dp"
+            android:layout_toRightOf="@id/route_time"
+            android:layout_marginTop="@dimen/top_5dp"/>
+
+        <TextView
+            android:id="@+id/num_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地点"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/route_name"
+            android:layout_toRightOf="@+id/idimage02" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/route_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始啦开始对开机暗黄色不分开考基础会计按时打卡就死了或大雾为很快就收到了萨科技部分就爱上看见的哈萨克就出来看见爱上"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:padding="@dimen/top_10dp"/>
+
+</LinearLayout>

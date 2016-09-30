@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="@dimen/top_5dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/city_travel_rl"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/top_10dp"
+        >
+        <ImageView
+            android:id="@+id/city_travel_image_item"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/city_travel_num_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数字"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:layout_alignBottom="@+id/city_travel_image_item"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/city_travel_address_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地名"
+        android:layout_toRightOf="@+id/city_travel_rl"
+        android:textSize="@dimen/text_15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/top_5dp"/>
+    <RatingBar
+        android:id="@+id/city_travel_ratingBar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_toRightOf="@+id/city_travel_rl"
+        android:layout_below="@+id/city_travel_address_item"
+        android:numStars="5"
+        android:rating="0"
+        android:isIndicator="true"
+        android:layout_marginTop="@dimen/top_3dp"
+        />
+
+
+    <TextView
+        android:id="@+id/city_travel_text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容阿萨我洛克人家案例看手机放到了快速减肥就收到了附近求"
+        android:textColor="@color/hui"
+        android:textSize="@dimen/text_12sp"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/city_travel_rl"
+        android:layout_alignBottom="@+id/city_travel_rl"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui"
+        android:layout_below="@+id/city_travel_rl"
+        android:layout_marginTop="@dimen/top_10dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:padding="@dimen/top_10dp"
+    tools:context="com.lanou.project.chanyouji.RaidersActivity.CityTravelListItemActivity">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/kaka"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/travel_item_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片 3865"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/top_5dp"
+        android:textSize="@dimen/text_12sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

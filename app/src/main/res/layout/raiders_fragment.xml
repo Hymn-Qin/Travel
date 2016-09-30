@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ccc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/top_10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/top_10dp"
+                android:text="最近浏览"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/top_5dp"
+                android:background="@color/hui" />
+
+            <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                android:id="@+id/scan_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_35dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="@dimen/top_10dp">
+
+            </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+
+
+            <!--亚洲-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/top_10dp"
+                android:layout_marginTop="@dimen/top_10dp"
+                android:text="国外 · 亚洲"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/top_5dp"
+                android:background="@color/hui" />
+
+
+            <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                android:id="@+id/asia_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="@dimen/top_10dp">
+
+            </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+
+
+            <!--欧洲-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/top_10dp"
+                android:layout_marginTop="@dimen/top_10dp"
+                android:text="国外 · 欧洲"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/top_5dp"
+                android:background="@color/hui" />
+
+            <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                android:id="@+id/europe_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="@dimen/top_10dp">
+
+            </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+
+
+            <!--&lt;!&ndash;美洲&ndash;&gt;-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/top_10dp"
+                android:layout_marginTop="@dimen/top_10dp"
+                android:text="美洲、大洋洲、非洲与南极洲"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/top_5dp"
+                android:background="@color/hui" />
+
+            <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                android:id="@+id/america_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="@dimen/top_10dp">
+
+            </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+
+
+            <!--&lt;!&ndash;港澳台&ndash;&gt;-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/top_10dp"
+                android:layout_marginTop="@dimen/top_10dp"
+                android:text="国内 · 港澳台"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/top_5dp"
+                android:background="@color/hui" />
+
+            <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                android:id="@+id/hkt_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="@dimen/top_10dp">
+
+            </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+
+
+            <!--&lt;!&ndash;大陆&ndash;&gt;-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/top_10dp"
+                android:layout_marginTop="@dimen/top_10dp"
+                android:text="国内 · 大陆"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/top_5dp"
+                android:background="@color/hui" />
+
+            <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                android:id="@+id/china_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="@dimen/top_10dp">
+
+            </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+
+        />
+
+</RelativeLayout>

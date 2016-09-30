@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/top_3dp"
+   >
+
+    <ImageView
+        android:id="@+id/features_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/feature_item_bj"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@mipmap/jianbian01" />
+    <TextView
+        android:id="@+id/features_item_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美食知多少"
+        android:textSize="@dimen/text_20sp"
+        android:layout_marginTop="160dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/top_20dp"/>
+    <TextView
+        android:id="@+id/features_item_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美食概括"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15sp"
+        android:layout_below="@id/features_item_food"
+        android:layout_marginLeft="@dimen/top_20dp"/>
+
+</RelativeLayout>

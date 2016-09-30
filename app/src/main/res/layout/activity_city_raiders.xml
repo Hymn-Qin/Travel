@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lanou.project.chanyouji.RaidersActivity.CityRaidersActivity">
+
+    <include layout="@layout/city_raiders_header_view"
+        android:id="@+id/rl01"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl01">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/look_rl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/look_image"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/look"/>
+
+                <TextView
+                    android:id="@+id/look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="上次看到  : "
+                    android:layout_toRightOf="@+id/look_image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/old_look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/look"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15sp" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jiantouyou"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/over_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/xian"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_5dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/qv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/liulan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/qv"
+                    android:text="概览"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/qv"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/qv"
+                    android:text="Overview"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qv"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/note_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/xian01"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/note"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian01"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/daichuxing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/note"
+                    android:text="出行须知"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/note"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/note"
+                    android:text="Note"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/noteview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/note"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/arrive_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian02"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/arrive"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian02"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/feiji" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/arrive"
+                    android:text="如何到达"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/arrive"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/arrive"
+                    android:text="Arrive"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/Arriveview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrive"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/traffic_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian03"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/traffic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian03"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/jiaotong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/traffic"
+                    android:text="当地交通"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/traffic"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/traffic"
+                    android:text="Traffic"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/trafficview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/traffic"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/attraction_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/xian11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/attraction"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian11"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/jingdian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/attraction"
+                    android:text="景点"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/attraction"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/attraction"
+                    android:text="Attraction"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/attractionview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/attraction"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/entertainment_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/xian12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/entertainment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian12"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/xiaolian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/entertainment"
+                    android:text="娱乐"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/entertainment"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/entertainment"
+                    android:text="Entertainment"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/entertainmentview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entertainment"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/hotel_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian04"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/hotel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian04"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/zhusu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/hotel"
+                    android:text="住宿"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/hotel"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/hotel"
+                    android:text="Hotel"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/hotelview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hotel"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/food_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian05"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/food"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian05"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/meishi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/food"
+                    android:text="美食"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/food"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/food"
+                    android:text="Food"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/foodview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/food"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/shopping_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian06"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/shopping"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian06"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/gouwu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/shopping"
+                    android:text="购物"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/shopping"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/shopping"
+                    android:text="Shopping"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/shoppingview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shopping"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/departure_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/departure"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian10"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/qianzheng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/departure"
+                    android:text="离境须知"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/departure"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/departure"
+                    android:text="Departure"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/departureview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/departure"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/other_R"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/xian07"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/top_10dp"
+                    android:background="@color/hui" />
+
+                <ImageView
+                    android:id="@+id/other"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/xian07"
+                    android:layout_marginLeft="@dimen/top_20dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:src="@mipmap/qita" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_marginTop="@dimen/top_20dp"
+                    android:layout_toRightOf="@+id/other"
+                    android:text="其他"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/other"
+                    android:layout_marginLeft="@dimen/top_10dp"
+                    android:layout_toRightOf="@+id/other"
+                    android:text="Other"
+                    android:textColor="@color/hui"
+                    android:textSize="@dimen/text_15sp" />
+
+                <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+                    android:id="@+id/otherview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/other"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth">
+
+                </com.lanou.project.chanyouji.Raiders.NoScrollGridView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

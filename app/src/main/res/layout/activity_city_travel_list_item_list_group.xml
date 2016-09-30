@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.lanou.project.chanyouji.RaidersActivity.CityTravelListItemActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hui"/>
+    <TextView
+        android:id="@+id/travel_item_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/top_10dp"
+        android:text="实用贴士"
+        android:padding="@dimen/top_10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hui"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

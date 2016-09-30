@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chanyouji</string>
+
+
+    <array name="title">
+        <item>游记</item>
+        <item>攻略</item>
+        <item>工具箱</item>
+    </array>
+
+</resources>

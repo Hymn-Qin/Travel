@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/travel_item_sc_image_view"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/lin_lin"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/travel_item_sc_image_view"/>
+    <TextView
+        android:id="@+id/travel_item_sc_image_text"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="说哦名"
+        android:maxLines="1"
+        android:maxWidth="110dp"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_10sp"
+        android:layout_alignBottom="@+id/travel_item_sc_image_view"
+       />
+    <TextView
+        android:id="@+id/travel_item_sc_travel_name"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:layout_below="@id/travel_item_sc_image_view"
+        android:text="景点名字"
+        android:maxWidth="110dp"
+        android:textSize="@dimen/text_12sp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+</RelativeLayout>

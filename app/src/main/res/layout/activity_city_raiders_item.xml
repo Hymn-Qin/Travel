@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lanou.project.chanyouji.RaidersActivity.CityRaidersItemActivity">
+
+    <include layout="@layout/city_raiders_header_view"
+        android:id="@+id/rll"/>
+
+    <ExpandableListView
+        android:id="@+id/city_raiders_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rll"
+        >
+
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/country_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/city_raiders_item_list"
+        android:layout_centerHorizontal="true"
+        android:text="日本"
+        android:layout_marginTop="@dimen/top_20dp"
+        android:textSize="@dimen/text_15sp" />
+
+</RelativeLayout>

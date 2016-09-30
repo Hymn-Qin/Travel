@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/text_15sp">
+
+    <TextView
+        android:id="@+id/child_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文章标题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/child_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啊老师打网页的啊四大皆空噶开始的发货数量和幅度收到了反馈撒谎健康色让多少了空间加萨卡特和发生了地方还看见俺还是dALSFJASLDKHFinSDHFLKA"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:autoLink="web"
+        android:textStyle="normal"
+        android:lineSpacingMultiplier="1.2"
+        android:textColorLink="@color/blue_top"
+        android:layout_marginTop="@dimen/top_10dp"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/child_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_10dp"
+        android:visibility="gone"
+       >
+        <LinearLayout
+            android:id="@+id/scro_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <include layout="@layout/activity_city_raiders_item_childs_xiangguan"
+        android:id="@+id/child_xiangguan"
+
+        />
+    <RelativeLayout
+        android:id="@+id/author_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作者"
+            android:visibility="gone"
+            android:textSize="@dimen/text_10sp"
+            android:layout_marginLeft="@dimen/top_10dp"
+            android:layout_marginTop="@dimen/text_10sp"/>
+
+
+        <TextView
+            android:id="@+id/child_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:visibility="gone"
+            android:textSize="@dimen/text_10sp"
+            android:layout_marginTop="@dimen/text_10sp"
+            android:layout_marginRight="@dimen/top_10dp"
+            android:layout_alignParentRight="true"/>
+        <include layout="@layout/activity_city_raiders_item_childs_address"
+            android:layout_toRightOf="@id/author"
+            android:id="@+id/addressNum1"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/top_10dp"
+            android:layout_marginLeft="@dimen/top_10dp"/>
+
+        <com.lanou.project.chanyouji.Raiders.NoScrollGridView
+            android:id="@+id/address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone"
+            android:stretchMode="columnWidth"
+            android:layout_marginTop="@dimen/text_10sp"
+            android:layout_marginLeft="@dimen/top_10dp"
+            android:layout_marginRight="@dimen/top_10dp"
+            android:layout_below="@+id/author"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui2"
+        android:layout_marginTop="@dimen/top_20dp"
+        android:layout_marginLeft="@dimen/top_5dp"
+        android:layout_marginRight="@dimen/top_5dp"/>
+
+
+</LinearLayout>
